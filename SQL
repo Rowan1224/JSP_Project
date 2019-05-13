@@ -1,0 +1,18 @@
+SQL 
+CREATE DATABASE testWeb;
+
+CREATE TABLE Login (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,username VARCHAR(30) NOT NULL,password VARCHAR(30) NOT NULL,userType VARCHAR(50));
+
+CREATE TABLE CourseTable (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,CourseName VARCHAR(30) NOT NULL,CourseCode VARCHAR(30) NOT NULL);
+
+CREATE TABLE CourseRegisterTable (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,CourseCode VARCHAR(30) NOT NULL,Name VARCHAR(30) NOT NULL,userType VARCHAR(50));
+
+INSERT INTO Login (username, password, usertype) VALUES ('Rowan', '12345', 'S');
+
+INSERT INTO Login (username, password, usertype) VALUES ('Rizu', '12345', 'T');
+INSERT INTO Login (username, password, usertype) VALUES ('Mishal', '12345', 'T');
+SELECT * from Login;
+SELECT * from CourseRegisterTable;
+
+
+mysqldump -u rowan testWeb > /home/rowan/Documents/testWeb.sql

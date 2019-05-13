@@ -1,0 +1,1 @@
+please set your database user name and password at JSP_Project/src/cse/web/Database.java
